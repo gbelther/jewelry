@@ -110,6 +110,9 @@ const config: Config = {
         950: '#172554',
       },
     },
+    backgroundImage: {
+      'hero-image': "url('/images/hero-image.png')",
+    },
   },
   plugins: [],
 }
