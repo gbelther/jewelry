@@ -1,5 +1,5 @@
 import { cn } from '@/libs/tailwindMerge'
-import LinkNext, { LinkProps } from 'next/link'
+import LinkNext from 'next/link'
 import React, { forwardRef } from 'react'
 
 const Link = forwardRef<
