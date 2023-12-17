@@ -10,6 +10,108 @@
 }
 
 body {
-  @apply font-primary;
+  @apply bg-white font-primary;
   font-size: 1rem;
+}
+
+@layer components {
+  .heading-1 {
+    @apply text-8xl font-bold;
+  }
+
+  .heading-2 {
+    @apply text-7xl font-bold;
+  }
+
+  .heading-3 {
+    @apply text-5xl font-bold;
+  }
+
+  .heading-4 {
+    @apply text-4xl font-bold;
+  }
+
+  .heading-5 {
+    @apply text-2xl font-bold;
+  }
+
+  .heading-6 {
+    @apply text-base font-bold;
+  }
+
+  .body-1 {
+    @apply text-2xl font-normal;
+  }
+
+  .body-2 {
+    @apply text-xl font-normal;
+  }
+
+  .body-3 {
+    @apply text-base font-normal;
+  }
+
+  .body-4 {
+    @apply text-sm font-normal;
+  }
+
+  .body-5 {
+    @apply text-xs font-normal;
+  }
+
+  .body-6 {
+    @apply text-3xs font-normal;
+  }
+
+  .label-1 {
+    @apply text-base font-medium;
+  }
+
+  .label-2 {
+    @apply text-sm font-medium;
+  }
+
+  .label-3 {
+    @apply text-xs font-medium;
+  }
+
+  .label-4 {
+    @apply text-2xs font-medium;
+  }
+}
+
+@layer base {
+  h1 {
+    @apply heading-1;
+  }
+
+  h2 {
+    @apply heading-2;
+  }
+
+  h3 {
+    @apply heading-3;
+  }
+
+  h4 {
+    @apply heading-4;
+  }
+
+  h5 {
+    @apply heading-5;
+  }
+
+  h6 {
+    @apply heading-6;
+  }
+
+  p,
+  span,
+  button,
+  li,
+  input,
+  textarea,
+  b {
+    @apply body-3;
+  }
 }
