@@ -12,6 +12,7 @@ const Content = React.forwardRef<
     ref={ref}
   />
 ))
+Content.displayName = 'DropdownContent'
 
 const Dropdown = {
   ...ReactDropdown,
