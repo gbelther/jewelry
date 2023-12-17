@@ -16,5 +16,6 @@ const Button = React.forwardRef<
     />
   )
 })
+Button.displayName = 'JWButton'
 
 export default Button

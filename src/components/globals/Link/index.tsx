@@ -14,5 +14,6 @@ const Link = forwardRef<
     />
   )
 })
+Link.displayName = 'JWLink'
 
 export default Link

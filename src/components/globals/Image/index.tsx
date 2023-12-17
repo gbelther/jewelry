@@ -9,5 +9,6 @@ const Image = forwardRef<
 >((props: Props, ref) => {
   return <ImageNext {...props} ref={ref} />
 })
+Image.displayName = 'JWImage'
 
 export default Image
