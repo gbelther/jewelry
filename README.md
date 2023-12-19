@@ -1,4 +1,4 @@
-# Bald Jewelry
+# Bald Jewelry (em desenvolvimento)
 Ecommerce de jóias
 
 ## Design Inspired
