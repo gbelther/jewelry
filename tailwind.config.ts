@@ -112,6 +112,7 @@ const config: Config = {
     },
     backgroundImage: {
       'hero-image': "url('/images/hero-image.png')",
+      'our-values': "url('/images/our-values.jpg')",
     },
   },
   plugins: [],
