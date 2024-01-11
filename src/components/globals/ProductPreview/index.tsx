@@ -9,7 +9,7 @@ type Props = {
   }
 }
 
-export default function Product({ product }: Props) {
+export default function ProductPreview({ product }: Props) {
   return (
     <div className="cursor-pointer overflow-hidden rounded bg-white shadow transition-transform hover:scale-110">
       <div className="relative aspect-square w-full">

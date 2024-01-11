@@ -1,8 +1,8 @@
 import React from 'react'
 import { remoteLoadBestSellers } from '@/remotes'
-import Product from './components/Product'
 import { formatters } from '@/utils/formatters'
 import Button from '@/components/globals/Button'
+import ProductPreview from '@/components/globals/ProductPreview'
 
 async function List() {
   const result = await remoteLoadBestSellers()
@@ -10,7 +10,7 @@ async function List() {
     return <h6>Falha ao carregar os produtos BestSellers</h6>
   }
   return result.data.map((bestSeller) => (
-    <Product
+    <ProductPreview
       key={bestSeller.id}
       product={{
         ...bestSeller,

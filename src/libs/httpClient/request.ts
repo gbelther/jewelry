@@ -25,9 +25,6 @@ export const request = async ({
   next,
   signal,
 }: Params) => {
-  setTimeout(() => {
-    console.log('request')
-  }, 1000)
   const urlWithQuery = defineUrlWithQueryParams(url, query)
   const urlParsed = new URL(urlWithQuery, baseUrls[baseUrl])
   const response = await fetch(urlParsed.toString(), {
