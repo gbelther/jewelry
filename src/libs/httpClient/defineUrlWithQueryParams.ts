@@ -5,12 +5,14 @@ export const defineUrlWithQueryParams = (
 ) => {
   let urlWithQuery = url
   Object.entries(query).forEach(([key, value], index) => {
-    if (index === 0) {
-      urlWithQuery += '?'
+    if (value) {
+      if (index === 0) {
+        urlWithQuery += '?'
+      }
+      urlWithQuery += `${index !== 0 ? '&' : ''}${key}=${
+        typeof value === 'string' ? value : JSON.stringify(value)
+      }`
     }
-    urlWithQuery += `${key}=${
-      typeof value === 'string' ? value : JSON.stringify(value)
-    }`
   })
   return urlWithQuery
 }
