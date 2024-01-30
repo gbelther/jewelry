@@ -4,13 +4,16 @@ import Header from '@/components/pages/Aliancas/Header'
 import Products from '@/components/pages/Aliancas/Products'
 import { ListOrdererVariant } from '@/@types'
 
-type PageProps = {
+type Props = {
+  params: {
+    categoryKey: string
+  }
   searchParams: {
     sort: ListOrdererVariant
   }
 }
 
-export default function AliancasPage({ searchParams }: PageProps) {
+export default function Page({ params, searchParams }: Props) {
   return (
     <main className="px-4 md:px-8 xl:px-12">
       <Header />
@@ -22,7 +25,10 @@ export default function AliancasPage({ searchParams }: PageProps) {
           </div>
         }
       >
-        <Products sortParam={searchParams.sort} />
+        <Products
+          categoryKeyParam={params.categoryKey}
+          sortParam={searchParams.sort}
+        />
       </Suspense>
     </main>
   )

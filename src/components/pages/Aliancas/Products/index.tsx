@@ -5,11 +5,15 @@ import { remoteLoadProducts } from '@/remotes'
 import { formatters } from '@/utils/formatters'
 
 type Props = {
+  categoryKeyParam: string
   sortParam: ListOrdererVariant
 }
 
-export default async function Products({ sortParam }: Props) {
-  const productsResult = await remoteLoadProducts({ sort: sortParam })
+export default async function Products({ categoryKeyParam, sortParam }: Props) {
+  const productsResult = await remoteLoadProducts({
+    categoryKey: categoryKeyParam,
+    sort: sortParam,
+  })
 
   return (
     <Listing.List>
