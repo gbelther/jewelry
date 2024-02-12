@@ -1,7 +1,6 @@
 import React from 'react'
 import { remoteLoadBestSellers } from '@/remotes'
 import { formatters } from '@/utils/formatters'
-import Button from '@/components/globals/Button'
 import ProductPreview from '@/components/globals/ProductPreview'
 
 async function List() {
@@ -32,7 +31,6 @@ export default async function BestSellers() {
           <List />
         </React.Suspense>
       </div>
-      <Button className="bg-white text-primary-700">Ver todas as jóas</Button>
     </div>
   )
 }
