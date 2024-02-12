@@ -18,6 +18,7 @@ export default function ProductPreview({ product }: Props) {
           alt={`Imagem de ${product.name}`}
           loading="lazy"
           fill
+          quality={80}
         />
       </div>
       <div className="flex flex-col items-center gap-1 px-1 py-2 text-center">
