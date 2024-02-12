@@ -10,7 +10,7 @@ export default function Hero() {
           <h1 className="text-primary-700">Bald Jewelry</h1>
         </div>
         <div>
-          <Link href="/braceletes">
+          <Link href="/categorias/braceletes">
             <Button
               type="button"
               className="max-w-xs px-4 py-2 text-2xl font-bold"
