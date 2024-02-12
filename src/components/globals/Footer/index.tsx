@@ -40,16 +40,16 @@ export default function Footer() {
             <Link href="/" className="text-sm">
               Início
             </Link>
-            <Link href="/aneis" className="text-sm">
+            <Link href="/categorias/aneis" className="text-sm">
               Aneis
             </Link>
-            <Link href="/aliancas" className="text-sm">
+            <Link href="/categorias/aliancas" className="text-sm">
               Alianças
             </Link>
-            <Link href="/colares" className="text-sm">
+            <Link href="/categorias/colares" className="text-sm">
               Colares
             </Link>
-            <Link href="/braceletes" className="text-sm">
+            <Link href="/categorias/braceletes" className="text-sm">
               Braceletes
             </Link>
           </div>
